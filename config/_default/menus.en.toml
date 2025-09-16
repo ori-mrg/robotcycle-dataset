@@ -32,10 +32,15 @@ name = "Team"
 url = "/team"
 weight = 3
 
+[[main]]
+name = "Contact"
+url = "/contact"
+weight = 4
+
 # footer menu
 [[footer]]
-name = "About"
-url = "/about"
+name = "Contact"
+url = "/contact"
 weight = 1
 
 [[footer]]
