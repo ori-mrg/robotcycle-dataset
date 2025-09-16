@@ -1,50 +1,36 @@
 ############# English navigation ##############
 
-# main menu
 [[main]]
-name = "Home"
-url = "/"
+name = "Dataset"
 weight = 1
 
 [[main]]
-name = "About"
-url = "/about"
+name = "Overview"
+url = "/dataset"
+parent = "Dataset"
+weight = 1
+
+[[main]]
+name = "Format"
+url = "/format"
+parent = "Dataset"
 weight = 2
 
 [[main]]
-name = "Elements"
-url = "/elements"
+name = "Download"
+url = "/download"
+parent = "Dataset"
 weight = 3
 
 [[main]]
-weight = 4
-name = "Pages"
+name = "Resources"
+url = "/resources"
+weight = 2
 
 [[main]]
-parent = "Pages"
-name = "Blog"
-url = "/blog"
-
-[[main]]
-parent = "Pages"
-name = "Contact"
-url = "/contact"
-
-[[main]]
-parent = "Pages"
-name = "Authors"
-url = "/authors"
-
-[[main]]
-parent = "Pages"
-name = "Categories"
-url = "/categories"
-
-[[main]]
-parent = "Pages"
-name = "404 Page"
-url = "/404"
-
+name = "Team"
+url = "/team"
+weight = 3
 
 # footer menu
 [[footer]]
@@ -53,11 +39,6 @@ url = "/about"
 weight = 1
 
 [[footer]]
-name = "Elements"
-url = "/elements"
-weight = 2
-
-[[footer]]
 name = "Privacy Policy"
-url = "/privacy-policy"
+url = "https://ori.ox.ac.uk/publications/datasets/robotcycle-ethics/"
 weight = 3
