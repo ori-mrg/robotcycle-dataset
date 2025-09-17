@@ -1,6 +1,7 @@
 ######################## default configuration ####################
 # The base URL of your site (required). This will be prepended to all relative URLs.
-baseURL = "https://ori-mrg.github.io/robotcycle-dataset/"
+#baseURL = "https://ori-mrg.github.io/robotcycle-dataset/"
+baseURL = "/"
 # Title of your website (required).
 title = "RobotCycle Dataset"
 # Your theme name
