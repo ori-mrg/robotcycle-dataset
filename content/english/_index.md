@@ -12,15 +12,15 @@ banner:
 # Features
 features:
   - title: "Wearable Sensing Unit"
-    image: "/images/urdf_corrected.png"
-    content: "Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What's Included in Hugoplate"
+    image: "/images/urdf.png"
+    content: "For the Oxford RobotCycle Project, we developed a lightweight, versatile, portable, and wearable sensing unit integrating state-of-the-art range and visual sensors with inertial navigation systems (INS). The cyclists also wore Aria Gen 1 glasses, which track head orientation and capture eye gaze direction."
     bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Hugo and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
+      - "Project Aria Gen 1 Glasses"
+      - "2 x Hesai XT-32 LiDARs"
+      - "2 x Stereolabs ZED2i Stereo Cameras"
+      - "2 x Basler Ace Monocular Cameras"
+      - "1 x SBG Ellipse-N INS"
+
     button:
       enable: false
       label: "Get Started Now"
