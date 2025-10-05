@@ -44,7 +44,7 @@ const deleteFolder = (folderPath) => {
 };
 
 const getFolderName = (rootFolder) => {
-  const configPath = path.join(rootFolder, "exampleSite/hugo.toml");
+  const configPath = path.join(rootFolder, "hugo.toml");
   const getConfig = fs.readFileSync(configPath, "utf8");
   const match = getConfig.match(/theme\s*=\s*\[?"([^"\]]+)"\]?/);
   let selectedTheme = null;
@@ -74,58 +74,9 @@ const iterateFilesAndFolders = (rootFolder, { destinationRoot }) => {
 
 const setupTheme = () => {
   const rootFolder = path.join(__dirname, "../");
-
-  if (!fs.existsSync(path.join(rootFolder, "exampleSite"))) {
-    // remove this part if you don't using theme demo as a module
-    [
-      {
-        filepath: path.join(rootFolder, "config/_default/module.toml"),
-        regex: /# \[\[imports\]\]\s*\r?\n# path = "([^"]+)"/,
-      },
-      {
-        filepath: path.join(rootFolder, "hugo.toml"),
-        regex: /^.*theme\s*=\s*("[^"\]]+"|\S+)/m,
-      },
-    ].forEach(toggleComment);
-
-    const includesFiles = [
-      "go.mod",
-      "hugo.toml",
-      "assets",
-      "config",
-      "data",
-      "content",
-      "i18n",
-      "static",
-      "tailwind-plugin",
-    ];
-
-    const folder = createNewFolder(rootFolder, "exampleSite");
-
-    fs.readdirSync(rootFolder, { withFileTypes: true }).forEach((file) => {
-      if (includesFiles.includes(file.name)) {
-        if (file.isDirectory()) {
-          const destination = path.join(rootFolder, "exampleSite", file.name);
-          fs.mkdirSync(destination, { recursive: true });
-          iterateFilesAndFolders(path.join(rootFolder, file.name), {
-            destinationRoot: destination,
-          });
-          deleteFolder(path.join(rootFolder, file.name));
-        } else {
-          fs.renameSync(
-            path.join(rootFolder, file.name),
-            path.join(folder, file.name),
-          );
-        }
-      }
-    });
-
-    const themes = path.join(rootFolder, "themes");
-    iterateFilesAndFolders(path.join(themes, getFolderName(rootFolder)), {
-      destinationRoot: rootFolder,
-    });
-    deleteFolder(themes);
-  }
+  // No exampleSite logic; operate directly on real site structure
+  // Add any setup logic you need here, or leave empty if not needed
+  console.log("Theme setup script: No exampleSite logic. Site structure is ready.");
 };
 
 setupTheme();
