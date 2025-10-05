@@ -1,11 +1,10 @@
 ---
-title: "Contact"
 meta_title: "Contact - The Oxford RobotCycle Project"
 description: "Contact the Oxford RobotCycle Project team"
 draft: false
 ---
 
-# Contact Us
+## Contact Us
 
 For inquiries about the Oxford RobotCycle Project, including dataset access requests, technical support, collaboration opportunities, or general questions, please reach out to us at:
 

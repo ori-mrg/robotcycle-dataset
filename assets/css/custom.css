@@ -1,4 +1,111 @@
+/* Responsive font size: shrink on smaller screens */
+@media (max-width: 900px) {
+  html {
+    font-size: 16px;
+  }
+  body, p, li, nav a, button {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  h4 {
+    font-size: 1.1rem;
+  }
+  h5, h6 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 15px;
+  }
+  body, p, li, nav a, button {
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  h3, h4, h5, h6 {
+    font-size: 1rem;
+  }
+}
 /* Add your own custom styles here */
+
+/* FONT SIZE CUSTOMIZATION */
+/* Increase base font size for entire website */
+
+html {
+  font-size: 17px; /* Slightly larger than default */
+}
+
+body {
+  font-size: 1.12rem; /* Slightly larger */
+  line-height: 1.6;
+}
+
+p {
+  font-size: 1.12rem;
+}
+
+li {
+  font-size: 1.12rem;
+}
+
+/* Increase heading sizes */
+h1 {
+  font-size: 2.5rem; /* Larger h1 */
+}
+
+h2 {
+  font-size: 2rem; /* Larger h2 */
+}
+
+h3 {
+  font-size: 1.75rem; /* Larger h3 */
+}
+
+h4 {
+  font-size: 1.5rem; /* Larger h4 */
+}
+
+h5 {
+  font-size: 1.25rem; /* Larger h5 */
+}
+
+h6 {
+  font-size: 1.125rem; /* Larger h6 */
+}
+
+/* Increase navigation text */
+nav a {
+  font-size: 1.125rem;
+}
+
+/* Increase button text */
+button {
+  font-size: 1.125rem;
+}
+
+/* Increase code text */
+code {
+  font-size: 1rem;
+}
+
+/* Increase pre code blocks */
+pre {
+  font-size: 1rem;
+}
 
 /* Button styling */
 .btn {
