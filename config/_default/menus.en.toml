@@ -1,15 +1,19 @@
 
+
 [[main]]
 name = "Overview"
 url = "/overview"
 parent = "Dataset"
 weight = 1
+draftOnly = true
+
 
 [[main]]
 name = "Format"
 url = "/format"
 parent = "Dataset"
 weight = 2
+draftOnly = true
 
 [[main]]
 name = "Download"
@@ -24,15 +28,19 @@ weight = 3
 name = "Dataset"
 weight = 1
 
+
 [[main]]
 name = "Resources"
 url = "/resources"
 weight = 2
+draftOnly = true
+
 
 [[main]]
 name = "Usage"
 url = "/usage"
 weight = 3
+draftOnly = true
 
 
 [[main]]

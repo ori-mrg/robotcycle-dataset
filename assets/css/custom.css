@@ -1,3 +1,8 @@
+/* Match updates box color to citation/code block in dark mode */
+.dark .updates-box {
+  background: #23272e !important;
+  border-color: #343a40 !important;
+}
 /* Responsive font size: shrink on smaller screens */
 @media (max-width: 900px) {
   html {

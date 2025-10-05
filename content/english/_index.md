@@ -118,7 +118,7 @@ We are grateful to everyone who participated in the design and development of th
 
 Latest news and milestones from the *Oxford RobotCycle Project*
 
-<div style="max-height: 290px; overflow-y: auto; border: 1px solid #e5e7eb; border-radius: 8px; padding: 0.5rem 1rem; background: #f9f9fa;">
+<div class="updates-box" style="max-height: 290px; overflow-y: auto; border: 1px solid #e5e7eb; border-radius: 8px; padding: 0.5rem 1rem; background: #f9f9fa;">
   <ul style="margin: 0; padding-left: 1.2em;">
     <li><b>October'25</b>: Paper presentation (poster &amp; oral) at IEEE IROS 2025</li>
     <li><b>October'25</b>: Website and SDK release</li>
