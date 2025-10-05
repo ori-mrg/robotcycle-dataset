@@ -1,1 +1,68 @@
 /* Add your own custom styles here */
+
+/* Button styling */
+.btn {
+  color: white !important;
+}
+
+.btn:hover {
+  color: white !important;
+}
+
+/* Dark mode button styling */
+.dark .btn {
+  color: black !important;
+}
+
+.dark .btn:hover {
+  color: black !important;
+}
+
+/* General link styling */
+a {
+  color: #3b82f6; /* Blue color */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  color: #1d4ed8; /* Darker blue on hover */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Dark mode styling for all links */
+.dark a {
+  color: #60a5fa; /* Lighter blue for dark mode */
+  text-decoration: none; /* Remove underline */
+}
+
+.dark a:hover {
+  color: #93c5fd; /* Even lighter blue on hover in dark mode */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Privacy section link styling (more specific) */
+.privacy-links a {
+  color: #3b82f6; /* Blue color */
+  text-decoration: none; /* Remove underline */
+}
+
+.privacy-links a:hover {
+  color: #1d4ed8; /* Darker blue on hover */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Dark mode styling for privacy links */
+.dark .privacy-links a {
+  color: #60a5fa; /* Lighter blue for dark mode */
+  text-decoration: none; /* Remove underline */
+}
+
+.dark .privacy-links a:hover {
+  color: #93c5fd; /* Even lighter blue on hover in dark mode */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Force Features section background to be transparent in dark mode */
+.dark .bg-gradient-to-b {
+  background: transparent !important;
+}

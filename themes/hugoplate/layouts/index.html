@@ -1,14 +1,26 @@
 {{ define "main" }}
-  <!-- Banner -->
+  <!-- Banner with Background Im        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg pt-2 pb-4 px-6">       <div class="bg-gray-50 dark:bg-gray-700 rounded-lg pt-2 pb-4 px-6">ge -->
   {{ with .Params.banner }}
-    <section class="section pt-14">
-      <div class="container">
+    <section class="section pt-14 relative">
+      <!-- Background Image Section - Right under menu -->
+      <!-- <div class="absolute inset-0 top-0">
+        <div class="container h-full">
+          <div class="row h-full">
+            <div class="col-12 h-full">
+              {{ partial "image" (dict "Src" "/images/cropped_lidar.png" "Alt" "Cropped LiDAR Image" "Loading" "eager" "Class" "w-full h-full object-contain object-top opacity-20" "DisplayXL" "1200x" ) }}
+            </div>
+          </div>
+        </div>
+      </div> -->
+      
+      <!-- Title and content overlay -->
+      <div class="container relative z-10">
         <div class="row justify-center">
           <div class="lg:col-7 md:col-9 mb-8 text-center">
-            <h1 class="mb-4 text-h3 lg:text-h1">
+            <h1 class="mb-4 text-h3 lg:text-h1 drop-shadow-lg text-[#002147] dark:text-white">
               {{ .title | markdownify }}
             </h1>
-            <p class="mb-8">
+            <p class="mb-8 text-xl lg:text-2xl font-bold drop-shadow-md text-[#002147] dark:text-white">
               {{ .content | markdownify }}
             </p>
             {{ with .button }}
@@ -25,7 +37,7 @@
               {{ end }}
             {{ end }}
           </div>
-          <div class="col-12">
+          <div class="col-12 -mt-6">
             {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto lg:!max-w-[800px]" "DisplayXL" "800x" ) }}
           </div>
         </div>
@@ -34,49 +46,212 @@
   {{ end }}
   <!-- /Banner -->
 
-  <!-- Features -->
-  {{ range $i, $e:= .Params.features }}
-    <section class="section-sm {{ if (modBool $i 2) }}bg-gradient{{ end }}">
-      <div class="container">
-        <div class="row items-center justify-between">
-          <div
-            class="mb:md-0 {{ if not (modBool $i 2) }}
-              md:order-2
-            {{ end }} md:col-5 mb-6">
-            {{ partial "image" (dict "Src" .image "Alt" "feature image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
+    <!-- Key Features Section -->
+  {{ with .Params.key_features }}
+    <section class="-mt-8 py-2 relative">
+      <!-- Background Image for Key Features -->
+      <div class="absolute inset-0">
+        <div class="container h-full">
+          <div class="row h-full">
+            <div class="col-12 h-full">
+              {{ partial "image" (dict "Src" "/images/cropped_lidar.png" "Alt" "Cropped LiDAR Image" "Loading" "lazy" "Class" "w-full h-full object-contain object-center opacity-20" "DisplayXL" "1200x" ) }}
+            </div>
           </div>
-          <div
-            class="{{ if not (modBool $i 2) }}
-              md:order-1
-            {{ end }} md:col-7 lg:col-6">
-            <h2 class="mb-4">
-              {{ .title | markdownify }}
-            </h2>
-            <p class="mb-8 text-lg">
-              {{ .content | markdownify }}
-            </p>
-            <ul>
-              {{ range .bulletpoints }}
-                <li class="relative mb-4 pl-6">
-                  <i class="fa fa-check absolute left-0 top-1.5"></i>
-                  {{ . | markdownify }}
-                </li>
+        </div>
+      </div>
+      <div class="container relative z-10">
+        <div class="bg-transparent rounded-lg pt-2 pb-4 px-6">
+          <div class="row justify-center">
+            <div class="col-12 text-center">
+              <h2 class="mb-3 text-black dark:text-white text-4xl lg:text-5xl font-bold">
+                {{ .title | markdownify }}
+              </h2>
+              <p class="mb-4 text-black dark:text-white text-lg lg:text-xl font-bold">
+                {{ .content | markdownify }}
+              </p>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
+                {{ range .bulletpoints }}
+                  <div class="text-black dark:text-white text-left text-lg font-bold">
+                    <i class="fa fa-check text-green-500 mr-3"></i>
+                    {{ . | markdownify }}
+                  </div>
+                {{ end }}
+              </div>
+              {{ with .button }}
+                {{ if .enable }}
+                  <div class="text-center mt-6">
+                    <a class="btn btn-primary" href="{{ .link | absURL }}">
+                      {{ .label }}
+                      <i class="fa fa-arrow-right pl-2"></i>
+                    </a>
+                  </div>
+                {{ end }}
               {{ end }}
-            </ul>
-            {{ with .button }}
-              {{ if .enable }}
-                <a class="btn btn-primary mt-6" href="{{ .link | absURL }}">
-                  {{ .label }}
-                  <i class="fa fa-arrow-right pl-2"></i>
-                </a>
-              {{ end }}
-            {{ end }}
+            </div>
           </div>
         </div>
       </div>
     </section>
   {{ end }}
-  <!-- /Features -->
+  <!-- /Key Features Section -->
+
+    <!-- Features -->
+    <section class="mt-8 py-2">
+      <div class="container">
+        <div class="bg-gradient-to-b from-gray-50 to-white dark:!bg-transparent rounded-lg pt-1 pb-1 px-6">
+          {{ range $i, $e:= .Params.features }}
+            <div class="{{ if eq $i 0 }}pt-0 pb-1{{ else }}py-1{{ end }}">
+              {{ if (modBool $i 2) }}
+                <div class="bg-transparent rounded-lg pb-0 px-2">
+                  <div class="row items-center justify-between">
+              {{ else }}
+                <div class="bg-transparent rounded-lg pb-0 px-2">
+                  <div class="row items-center justify-between">
+              {{ end }}
+            <div
+              class="mb:md-0 {{ if not (modBool $i 2) }}
+                md:order-2
+              {{ end }} md:col-5 mb-1">
+              {{ if eq $i 0 }}
+                {{ partial "image" (dict "Src" .image "Alt" "feature image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x" "Class" "max-w-32 md:max-w-40 lg:max-w-48 mx-auto scale-80") }}
+              {{ else }}
+                {{ partial "image" (dict "Src" .image "Alt" "feature image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x" "Class" "max-w-32 md:max-w-40 lg:max-w-48 mx-auto scale-80") }}
+              {{ end }}
+            </div>
+            <div
+              class="{{ if not (modBool $i 2) }}
+                md:order-1
+              {{ end }} md:col-7 lg:col-6">
+              <h2 class="mb-2 text-3xl text-black dark:text-white">
+                {{ .title | markdownify }}
+              </h2>
+              <p class="mb-4 text-lg text-black dark:text-white">
+                {{ .content | markdownify }}
+              </p>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-1">
+                {{ range .bulletpoints }}
+                  <div class="relative pl-6 text-black dark:text-white text-lg">
+                    <span class="absolute left-0 top-1.5">•</span>
+                    {{ . | markdownify }}
+                  </div>
+                {{ end }}
+              </div>
+              {{ with .button }}
+                {{ if .enable }}
+                  <a class="btn btn-primary mt-6" href="{{ .link | absURL }}">
+                    {{ .label }}
+                    <i class="fa fa-arrow-right pl-2"></i>
+                  </a>
+                {{ end }}
+              {{ end }}
+            </div>
+          {{ if (modBool $i 2) }}
+            </div>
+          {{ end }}
+          </div>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+    <!-- /Features -->
+
+  <!-- Authors -->
+  {{ with .Params.authors }}
+    <section class="section py-8">
+      <div class="container">
+        <div class="text-left">
+          <h2 class="mb-4 text-black dark:text-white text-2xl lg:text-3xl font-bold">
+            {{ .title | markdownify }}
+          </h2>
+          <p class="text-black dark:text-white text-base lg:text-lg">
+            {{ .content | markdownify }}
+          </p>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+  <!-- /Authors -->
+
+  <!-- Updates -->
+  {{ with .Params.updates }}
+    <section class="section py-8">
+      <div class="container">
+        <div class="text-left">
+          <h2 class="mb-4 text-black dark:text-white text-2xl lg:text-3xl font-bold">
+            {{ .title | markdownify }}
+          </h2>
+          <p class="mb-4 text-black dark:text-white text-base lg:text-lg">
+            {{ .content | markdownify }}
+          </p>
+          {{ if .bulletpoints }}
+            <div class="bg-white dark:bg-transparent rounded-lg p-4 max-h-64 overflow-y-auto border border-gray-200 dark:border-gray-400">
+              {{ range .bulletpoints }}
+                <div class="mb-2 text-black dark:text-white text-base lg:text-lg">
+                  • {{ . | markdownify }}
+                </div>
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+  <!-- /Updates -->
+
+  <!-- Privacy -->
+  {{ with .Params.privacy }}
+    <section class="section py-8">
+      <div class="container">
+        <div class="text-left">
+          <h2 class="mb-4 text-black dark:text-white text-2xl lg:text-3xl font-bold">
+            {{ .title | markdownify }}
+          </h2>
+          <div class="text-black dark:text-white text-base lg:text-lg privacy-links">
+            {{ .content | markdownify }}
+          </div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+  <!-- /Privacy -->
+
+  <!-- Citation -->
+  {{ with .Params.citation }}
+    <section class="section py-8">
+      <div class="container">
+        <div class="text-left">
+          <h2 class="mb-4 text-black dark:text-white text-2xl lg:text-3xl font-bold">
+            {{ .title | markdownify }}
+          </h2>
+          <p class="mb-8 text-black dark:text-white text-lg">
+            {{ .subtitle | markdownify }}
+          </p>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <!-- Left Column -->
+            <div class="text-left">
+              <p class="mb-4 text-black dark:text-white text-base">
+                {{ .left_column.title | markdownify }}
+              </p>
+              <div class="bg-gray-100 dark:bg-gray-800 rounded-lg p-4 overflow-x-auto">
+                <pre class="text-xs text-black dark:text-white whitespace-pre-wrap">{{ .left_column.citation | markdownify }}</pre>
+              </div>
+            </div>
+            <!-- Right Column -->
+            <div class="text-left">
+              <p class="mb-4 text-black dark:text-white text-base">
+                {{ .right_column.title | markdownify }}
+              </p>
+              <div class="bg-gray-100 dark:bg-gray-800 rounded-lg p-4 overflow-x-auto">
+                <pre class="text-xs text-black dark:text-white whitespace-pre-wrap">{{ .right_column.citation | markdownify }}</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+  <!-- /Citation -->
 
   <!-- Testimonials -->
   {{ with site.GetPage "sections/testimonial" }}
