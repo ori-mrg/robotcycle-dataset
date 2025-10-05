@@ -1,19 +1,51 @@
+
+[[main]]
+name = "Overview"
+url = "/overview"
+parent = "Dataset"
+weight = 1
+
+[[main]]
+name = "Format"
+url = "/format"
+parent = "Dataset"
+weight = 2
+
+[[main]]
+name = "Download"
+url = "/download"
+parent = "Dataset"
+weight = 3
 ############# English navigation ##############
+
+
 
 [[main]]
 name = "Dataset"
 weight = 1
 
 [[main]]
+name = "Resources"
+url = "/resources"
+weight = 2
+
+[[main]]
+name = "Usage"
+url = "/usage"
+weight = 3
+
+
+[[main]]
 name = "Download"
 url = "/download"
 parent = "Dataset"
-weight = 1
+weight = 3
+
 
 [[main]]
 name = "Contact"
 url = "/contact"
-weight = 2
+weight = 4
 
 # footer menu
 [[footer]]
