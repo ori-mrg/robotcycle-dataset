@@ -10,6 +10,39 @@
 
 ![RobotCycle Dataset Banner](/images/banner.png)
 
+
+<div style="display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; align-items: center; margin: 2rem 0 2.5rem 0;">
+  <div style="text-align: center;">
+    <a href="https://ieeexplore.ieee.org/abstract/document/10981746" target="_blank" rel="noopener">
+      <img src="images/paperpreview.png" alt="Paper Preview" style="max-width: 180px; width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+    </a>
+  </div>
+  <div>
+    <div style="font-size: 1em; font-weight: bold; margin-bottom: 0.5em;">
+      The Oxford RobotCycle Project: A Multimodal Urban Cycling Dataset for Assessing the Safety of Vulnerable Road Users
+    </div>
+    <div style="font-size: 0.8em; color: #555; margin-bottom: 0.5em;">
+  <a href="https://efimiap.github.io/" target="_blank" rel="noopener">Efimia Panagiotaki</a>, 
+  <a href="https://ori.ox.ac.uk/people/divya-thuremella/" target="_blank" rel="noopener">Divya Thuremella</a>, 
+  <a href="https://ori.ox.ac.uk/people/jumana-baghabrah/" target="_blank" rel="noopener">Jumana Baghabrah</a>, 
+  <a href="https://ori.ox.ac.uk/people/samuel-sze/" target="_blank" rel="noopener">Samuel Sze</a>, 
+  <a href="https://www.fulkast.com/" target="_blank" rel="noopener">Lanke Frank Tarimo Fu</a>, 
+  <a href="https://www.cs.ox.ac.uk/people/benjamin.hardin/" target="_blank" rel="noopener">Benjamin Hardin</a>, 
+  <a href="https://treinmund.github.io/" target="_blank" rel="noopener">Tyler Reinmund</a>, 
+  <a href="https://ori.ox.ac.uk/people/tobit-flatscher/" target="_blank" rel="noopener">Tobit Flatscher</a>, 
+  <a href="https://ori.ox.ac.uk/people/daniel-marques/" target="_blank" rel="noopener">Daniel Marques</a>, 
+  <a href="https://ori.ox.ac.uk/people/chris-prahacs/" target="_blank" rel="noopener">Chris Prahacs</a>, 
+  <a href="https://scholar.google.co.uk/citations?user=TLC0azYAAAAJ&hl=en" target="_blank" rel="noopener">Lars Kunze</a>, 
+  <a href="https://scholar.google.com/citations?user=F7QcGh0AAAAJ&hl=en" target="_blank" rel="noopener">Daniele De Martini</a>
+    </div>
+    <div style="font-size: 0.98em; color: #888;">
+      <i>IEEE Transactions on Field Robotics, 2025</i>
+    </div>
+  </div>
+</div>
+
+
+
 ## Key Features
 
 A comprehensive dataset for risk assessment, traffic modelling, scene understanding, and odometry estimation.
@@ -36,12 +69,12 @@ A comprehensive dataset for risk assessment, traffic modelling, scene understand
 </div>
 
 <div style="text-align: center; margin: 2rem 0; margin-bottom: 3rem">
-<a href="/download" style="display: inline-block; background-color: #002147; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1em; transition: background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#001a38'" onmouseout="this.style.backgroundColor='#002147'">
+<a href="https://ori-mrg.github.io/robotcycle-dataset/download/" style="display: inline-block; background-color: #002147; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1em; transition: background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#001a38'" onmouseout="this.style.backgroundColor='#002147'">
 📥 Download Dataset
 </a>
 </div>
 
-
+---
 
 ### Wearable Sensing Unit
 
@@ -64,7 +97,8 @@ We developed a lightweight, portable, wearable sensing unit integrating advanced
 </div>
 </div>
 
-### RobotCycle Toolkit SDK
+
+### RobotCycle DevKit
 
 An open-source software development kit providing essential tools for processing, analysing, and visualising the RobotCycle dataset. Our toolkit streamlines research workflows with automated processing pipelines.
 
@@ -107,9 +141,9 @@ The dataset supports diverse research applications related to perception, traffi
 </div>
 
 
-## Authors
+## Project Team
 
-The RobotCycle Project was a collaborative effort between the Cognitive Robotics Group, the [Mobile Robotics Group](https://ori-mrg.github.io/), and the Engineering Team of the [Oxford Robotics Institute](https://ori.ox.ac.uk/). This work was jointly led by Professors [Lars Kunze](https://scholar.google.co.uk/citations?user=TLC0azYAAAAJ&hl=en) and [Daniele De Martini](https://scholar.google.com/citations?user=F7QcGh0AAAAJ&hl=en), with [Efimia Panagiotaki](https://efimiap.github.io/) serving as Research Lead and [Chris Prahacs](https://ori.ox.ac.uk/people/chris-prahacs/) as Engineering Lead. Contributors from the ORI also include Divya Thuremella, Jumana Baghabrah, Samuel Sze, Lanke Frank Tarimo Fu, Benjamin Hardin, Tyler Reinmund, Tobit Flatscher, and Daniel Marques. 
+The RobotCycle Project was a collaborative effort between the Cognitive Robotics Group, the [Mobile Robotics Group](https://ori-mrg.github.io/), and the Engineering Team of the [Oxford Robotics Institute](https://ori.ox.ac.uk/). This work was jointly led by Professors [Lars Kunze](https://scholar.google.co.uk/citations?user=TLC0azYAAAAJ&hl=en) and [Daniele De Martini](https://scholar.google.com/citations?user=F7QcGh0AAAAJ&hl=en), with [Efimia Panagiotaki](https://efimiap.github.io/) serving as Research Lead and [Chris Prahacs](https://ori.ox.ac.uk/people/chris-prahacs/) as Engineering Lead. 
 
 We are grateful to everyone who participated in the design and development of the backpack and the successful completion of the cycling trials. A special thank you goes to our dedicated engineers and the incredible cyclists whose efforts and patience made this dataset possible.
 

@@ -1,3 +1,7 @@
+/* Remove underline from all links (force, all states) */
+a, a:visited, a:active, a:hover {
+  text-decoration: none !important;
+}
 /* Match updates box color to citation/code block in dark mode */
 .dark .updates-box {
   background: #23272e !important;
@@ -132,24 +136,17 @@ pre {
 
 /* General link styling */
 a {
-  color: #3b82f6; /* Blue color */
-  text-decoration: none; /* Remove underline */
+  color: #3b82f6;
 }
-
 a:hover {
-  color: #1d4ed8; /* Darker blue on hover */
-  text-decoration: none; /* Remove underline */
+  color: #1d4ed8;
 }
-
 /* Dark mode styling for all links */
 .dark a {
-  color: #60a5fa; /* Lighter blue for dark mode */
-  text-decoration: none; /* Remove underline */
+  color: #60a5fa;
 }
-
 .dark a:hover {
-  color: #93c5fd; /* Even lighter blue on hover in dark mode */
-  text-decoration: none; /* Remove underline */
+  color: #93c5fd;
 }
 
 /* Privacy section link styling (more specific) */

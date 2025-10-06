@@ -1,7 +1,10 @@
 
 
 ## Download
-To download the dataset, please **send us an email at robotcycle@oxfordrobotics.institute with your full name and institutional affiliation**.
+
+To request access to the dataset, please fill out the form below with your full name, institutional affiliation, and **institutional email address**.
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSendXHInUoh_r_G79HNxzHG-2Vhc_ZObEkgK-Lm80mZaRUXuw/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 
 ### License
