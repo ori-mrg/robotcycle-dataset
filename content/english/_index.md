@@ -145,7 +145,7 @@ The dataset supports diverse research applications related to perception, traffi
 
 The RobotCycle Project was a collaborative effort between the Cognitive Robotics Group, the [Mobile Robotics Group](https://ori-mrg.github.io/), and the Engineering Team of the [Oxford Robotics Institute](https://ori.ox.ac.uk/). This work was jointly led by Professors [Lars Kunze](https://scholar.google.co.uk/citations?user=TLC0azYAAAAJ&hl=en) and [Daniele De Martini](https://scholar.google.com/citations?user=F7QcGh0AAAAJ&hl=en), with [Efimia Panagiotaki](https://efimiap.github.io/) serving as Research Lead and [Chris Prahacs](https://ori.ox.ac.uk/people/chris-prahacs/) as Engineering Lead. 
 
-We are grateful to everyone who participated in the design and development of the backpack and the successful completion of the cycling trials. A special thank you goes to our dedicated engineers and the incredible cyclists whose efforts and patience made this dataset possible.
+We are grateful to everyone who participated in the design and development of the backpack, and the successful completion of the cycling trials. A special thank you goes to our dedicated engineers and the incredible cyclists whose efforts and patience made this dataset possible.
 
 
 ## Updates
